@@ -1,0 +1,125 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.form-wrapper{
+  filter: blur(5px);
+  background-image: url(../images/slide_1-mobile.webp);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position:absolute;
+  z-index: 1;
+
+}
+
+.login-form{
+  position: relative;
+  background: transparent;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+  text-align: center;
+  padding: 20px; 
+  z-index: 2;
+  width:60vw;
+  padding: 5vw;
+  
+  transform: translateY(30%);
+  margin: auto;
+}
+.login-form img{
+  height: 10vw;
+}
+
+
+.login-form h3{
+color: white;
+text-shadow:rgb(128, 128, 128) 1px 2px;
+
+}
+.login-form a{
+color: #5CA0C0;
+text-shadow: rgb(139, 134, 134) 1px 1px;
+font-size: 20px;
+}
+.login-form h2{
+  font-size: 30px;
+  margin-bottom: 20px;
+  color:#5CA0C0;
+  text-shadow:rgb(187, 185, 185) 2px 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.form-control{
+  width: 80%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px #5CA0C0 solid;
+  height: 5vh;
+  outline: none;
+  margin: 1vw;
+}
+::placeholder{
+  color: #d5ecbe;
+  text-shadow: rgb(139, 134, 134) 1px 1px;
+}
+button{
+  background-color:#5CA0C0;
+  color: white;
+  border: none;
+  padding: 7px;
+  margin: 7px;
+  width: 80%;
+  box-shadow:#569ab9 1px 1px 10px;
+}
+button:hover{
+ width: 87%;
+ box-shadow: #5CA0C0 1px 1px 10px;
+ 
+}
+.fa-solid{
+  font-size: 4vw;
+  color:#5CA0C0;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  padding: 10px;
+}
+.pull-left{
+  color: white;
+}
+@media (min-width:800px){
+  .login-form{
+    top: -10vw;
+  }
+  .form-wrapper{
+    padding: 100vh 0vh;
+  }
+  ::placeholder{
+    color: #d5ecbe;
+    text-shadow: #5CA0C0 1px 1px 10px;
+    text-shadow: rgb(139, 134, 134) 1px 1px;
+  }
+}
+
+@media (min-width:1000px){
+  .login-form{
+    top: -12vw;
+  }
+  .fa-solid{
+    font-size: 42px;
+  }
+  .form-control{
+    font-size: 17px;
+  }
+  .form-wrapper{
+    padding: 100vh 0vh;
+  }
+}
+
